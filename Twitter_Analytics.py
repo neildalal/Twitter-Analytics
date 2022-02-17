@@ -13,10 +13,10 @@ from geopy.geocoders import Nominatim
 import plotly.express as px
 
 # Connect to the Twitter API
-consumer_key= 'aCDpd0xMeBmzof2vITvOiMKeT'
-consumer_secret= '84rzxwrekt6wpCKZ7CDYYW31x5zwclRo0h8gccYkjp0B6jpwpw'
-access_token= '1489607100519297024-UUFseTpA9D3wcB61ow09g0SL8Cg5JI'
-access_token_secret= 'O6xhnyNnToHJPkvEI1O4dLqK3yJzsLKCJop5NKp0oErJy'
+consumer_key= 'Enter your key'
+consumer_secret= 'Enter your key'
+access_token= 'Enter your key'
+access_token_secret= 'Enter your key'
 auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
 auth.set_access_token(access_token, access_token_secret)
 api = tweepy.API(auth, wait_on_rate_limit=True)
