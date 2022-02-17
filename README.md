@@ -11,8 +11,9 @@ The code Twitter_Analytics.py extracts and analyses the data of any Twitter User
 8) Calculate and plot the number of tweets depending on the day of the week on which they were tweeted
 
 Inputs (Variables) to set in code:
-1) The twitter user ('account')
-2) The start and end date between which we want to extract the tweets ('start' and 'end')
+1) The twitter developer keys (4 in total)
+2) The twitter user ('account')
+3) The start and end date between which we want to extract the tweets ('start' and 'end')
 
 
 Limitations:
