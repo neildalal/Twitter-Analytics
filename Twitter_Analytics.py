@@ -1,10 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# 𝐀𝐧𝐚𝐥𝐲𝐬𝐢𝐬 𝐨𝐟 𝐓𝐰𝐢𝐭𝐭𝐞𝐫 𝐀𝐜𝐜𝐨𝐮𝐧𝐭 𝐨𝐟 𝐃𝐢𝐠𝐢𝐭 𝐈𝐧𝐬𝐮𝐫𝐚𝐧𝐜𝐞 (@𝐡𝐞𝐲𝐝𝐢𝐠𝐢𝐭)
-
-# In[4]:
-
+# 𝐀𝐧𝐚𝐥𝐲𝐬𝐢𝐬 𝐨𝐟 𝐓𝐰𝐢𝐭𝐭𝐞𝐫 𝐀𝐜𝐜𝐨𝐮𝐧𝐭 𝐨𝐟 Tag8 (@tag8_official)
 
 account = 'tag8_official' #enter twitter id
 
@@ -79,16 +76,11 @@ for (i, x) in enumerate(new_list):
 df = pd.DataFrame({'add' : add, 'lat': lat,'long': long, 'user': user, 'followers': followers_count}) 
 
 
-# In[5]:
-
-
 #Plot the geographic distribution of the followers
 fig = px.scatter_geo(df,lat='lat',lon='long', hover_name="add", hover_data=["user", "followers"])
 fig.update_layout(title = 'Geographic Distribution of Twitter Followers', title_x=0.5)
 fig.show()   
 
-
-# In[6]:
 
 
 import datetime
@@ -161,16 +153,12 @@ display(top_liked[0:10])
 display(top_hash[0:10])
 
 
-# In[7]:
-
 
 influencers = {'User':follower_ids, 'Followers Count':foll_follcount}
 influencer = pd.DataFrame(influencers)
 influencer.sort_values(by = 'Followers Count', ascending = False, inplace=True, ignore_index=True)
 display(influencer)
 
-
-# In[8]:
 
 
 df = pd.DataFrame(tweet_distribution.items(),columns = ['Tweet_type','count'])
@@ -213,7 +201,6 @@ plt.show()
 display(df2.sort_values(by = 'count', ascending = False, ignore_index=True))
 
 
-# In[9]:
 
 
 dict = {'Monday': weekday[0], 'Tuesday': weekday[1], 'Wednesday': weekday[2], 'Thursday': weekday[3], 'Friday': weekday[4], 'Saturday': weekday[5], 'Sunday': weekday[6]}
