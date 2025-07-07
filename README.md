@@ -1,5 +1,7 @@
 # Twitter-Analytics
 
+EDIT: In July, 2023 Twitter was rebranded to X and its APIs were changed - so the attached code will not work as it is. Please make necessary changes as required.
+
 The code Twitter_Analytics.py extracts and analyses the data of any Twitter User. Specifically:
 1) It prints the number of followers and the list of screen names of each of the followers.
 2) Visualises the geographic distribution of the followers on a world map. One can zoom in/out and hover on the map to see the location, user id and no. of followers of that user.
